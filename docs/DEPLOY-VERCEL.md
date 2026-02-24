@@ -20,7 +20,7 @@ Get the KVN Sec School website running on Vercel.
    - **Framework Preset:** Next.js (auto-detected).  
    - **Root Directory:** leave blank.  
    - **Build Command:** `next build` (default).  
-   - **Install Command:** `yarn install` or `npm install` as per your lockfile.
+   - **Install Command:** `pnpm install` (Vercel will detect `pnpm-lock.yaml`).
 
 3. **Environment variables (Phase 1)**  
    For the static/public site only, **no env vars are required**.  

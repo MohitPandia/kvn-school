@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - **Node.js** 20+ or 22+ (see `package.json` engines if set)
-- **Yarn** (or `corepack enable` then use yarn), or npm
+- **pnpm** (`corepack enable` then `corepack prepare pnpm@latest --activate`, or install via npm)
 
 ---
 
@@ -13,10 +13,10 @@ From the project root:
 
 ```bash
 # 1. Install dependencies
-yarn install
+pnpm install
 
 # 2. Start the dev server
-yarn dev
+pnpm dev
 ```
 
 Open **http://localhost:3000**. For Phase 1 (no database), no `.env` is required.
@@ -44,12 +44,12 @@ Copy from `.env.example` if the project provides one.
 
 ## Useful commands
 
-| Command       | Description              |
-|---------------|--------------------------|
-| `yarn dev`    | Start Next.js dev server |
-| `yarn build`  | Production build         |
-| `yarn start`  | Run production server    |
-| `yarn lint`   | Run ESLint               |
+| Command        | Description              |
+|----------------|--------------------------|
+| `pnpm dev`     | Start Next.js dev server |
+| `pnpm build`   | Production build         |
+| `pnpm start`   | Run production server    |
+| `pnpm lint`    | Run ESLint               |
 
 ---
 

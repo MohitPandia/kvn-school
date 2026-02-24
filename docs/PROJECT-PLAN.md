@@ -14,7 +14,7 @@ This document breaks the work into phases, milestones, and concrete steps so we 
 - [ ] Add `src/` structure: `app/`, `components/`, `hooks/`, `lib/`, `types/`, `public/`.
 - [ ] Add `lib/constants.ts` with school name (KVN Sec School / Krishna Vidhya Niketan), address (Bikaner, 334001), placeholder contact.
 - [ ] Add `types/domain.ts` with at least `NavItem`, `CarouselImage` (or similar).
-- [ ] Verify `yarn dev` runs and the default page loads.
+- [ ] Verify `pnpm dev` runs and the default page loads.
 
 **Deliverable:** Clean Next.js + Tailwind base; no custom UI yet.
 

@@ -10,7 +10,7 @@ Documentation for the **KVN Sec School** (Krishna Vidhya Niketan Sec School) web
 | **[STRUCTURE.md](./STRUCTURE.md)** | Codebase structure: `app/`, `components/`, `hooks/`, `lib/` (including `lib/db/` and `lib/svc/`), `types/`. Same modular approach as the hospital-management reference project. |
 | **[DATABASE.md](./DATABASE.md)** | **DB table convention** (id, entity_pid, created_at, updated_at, is_deleted), **DB layer vs service (svc) layer**, GORM-style CRUD + filters, Neon + Vercel. |
 | **[PROJECT-PLAN.md](./PROJECT-PLAN.md)** | Phases, milestones, and step-by-step tasks. Start with Phase 1 (scaffold → navbar → landing + carousel → About & Academics → login placeholders). |
-| **[LOCAL-SETUP.md](./LOCAL-SETUP.md)** | How to run the project locally (Node, yarn, `yarn dev`). |
+| **[LOCAL-SETUP.md](./LOCAL-SETUP.md)** | How to run the project locally (Node, pnpm, `pnpm dev`). |
 
 ## Quick start
 
