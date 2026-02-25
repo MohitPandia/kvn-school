@@ -4,14 +4,14 @@
  */
 
 export const schoolName = "KVN Sec School";
-export const schoolFullName = "Krishna Vidhya Niketan Sec School";
+export const schoolFullName = "Krishna Vidhya Niketan Secondary School";
 
 export const school = {
   name: schoolName,
   fullName: schoolFullName,
-  address: "Inside Jassusar Gate, Pareek Chowk, Dagon Ka Mohalla, Bikaner, Rajasthan 334001",
+  address: "Inside Jassusar Gate, Bikaner, Rajasthan 334001",
   phone: "9413278057",
-  email: "ghanshyamkrisha1997@gmail.com",
+  email: "ghanshyamkrishna1997@gmail.com",
   /** Lat, lng for maps */
   location: { lat: 28.01954692275305, lng: 73.30343032974224 },
   /** Google Maps embed URL for iframe */
