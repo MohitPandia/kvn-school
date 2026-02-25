@@ -1,4 +1,4 @@
-import { schoolFullName } from "@/lib/constants";
+import { schoolFullName, school } from "@/lib/constants";
 
 export default function AboutPage() {
   return (
@@ -96,6 +96,51 @@ export default function AboutPage() {
             We are shaping lives.
           </p>
         </footer>
+
+        {/* Contact & location */}
+        <section className="mt-16 border-t border-border pt-10">
+          <h2 className="text-xl font-semibold text-foreground">Find us</h2>
+          <div className="mt-4 space-y-2 text-muted-foreground">
+            <p>
+              <span className="font-medium text-foreground">Mobile:</span>{" "}
+              <a
+                href={`tel:+91${school.phone}`}
+                className="text-primary hover:underline"
+              >
+                {school.phone}
+              </a>
+            </p>
+            <p>
+              <span className="font-medium text-foreground">Email:</span>{" "}
+              <a
+                href={`mailto:${school.email}`}
+                className="text-primary hover:underline"
+              >
+                {school.email}
+              </a>
+            </p>
+            <p>
+              <span className="font-medium text-foreground">Address:</span>{" "}
+              {school.address}
+            </p>
+            <p className="text-sm">
+              <span className="font-medium text-foreground">Location:</span>{" "}
+              {school.location.lat}, {school.location.lng}
+            </p>
+          </div>
+          <div className="mt-6 overflow-hidden rounded-lg border border-border bg-muted/30">
+            <iframe
+              src={school.mapEmbedUrl}
+              width="600"
+              height="450"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Krishna Vidhya Niketan Sec School on Google Maps"
+              className="h-[250px] w-full border-0 sm:h-[350px] md:h-[450px]"
+            />
+          </div>
+        </section>
       </div>
     </article>
   );
