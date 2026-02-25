@@ -12,7 +12,7 @@ export default function AboutPage() {
       <div className="mt-8 space-y-8 text-muted-foreground">
         <section>
           <p className="text-lg leading-relaxed">
-            Established in May 1997, {schoolFullName}, Bikaner was founded with a
+            Established in May 1, 1997, {schoolFullName}, Bikaner was founded with a
             dream — a dream to build not just a school, but a nurturing space
             where children are guided, valued, and empowered to shape their own
             futures.

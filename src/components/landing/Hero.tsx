@@ -4,7 +4,7 @@ import { schoolName, schoolFullName, navItems } from "@/lib/constants";
 
 export function Hero() {
   return (
-    <section className="relative bg-gradient-to-b from-primary/10 to-background py-16 px-4 sm:px-6">
+    <section className="relative bg-gradient-to-b from-primary/5 via-background to-background py-16 px-4 sm:px-6">
       <div className="mx-auto max-w-4xl text-center">
         <div className="flex justify-center mb-6">
           <Image
