@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { schoolName, navItems } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -13,9 +14,10 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link
           href="/"
-          className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
+          className="flex items-center gap-2 text-lg font-semibold text-foreground hover:text-primary transition-colors"
         >
-          {schoolName}
+          <Image src="/logo.png" alt="" width={80} height={28} className="h-7 w-auto" />
+          <span className="hidden sm:inline">{schoolName}</span>
         </Link>
 
         {/* Desktop links */}
