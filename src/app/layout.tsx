@@ -3,6 +3,8 @@ import { Nunito } from "next/font/google";
 import "./globals.css";
 import { LocaleProvider } from "@/contexts/LocaleContext";
 import { Navbar } from "@/components/layout/Navbar";
+import { TopBanner } from "@/components/layout/TopBanner";
+import { Footer } from "@/components/layout/Footer";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -34,8 +36,10 @@ export default function RootLayout({
     <html lang="en" className={nunito.variable} suppressHydrationWarning>
       <body className="antialiased min-h-screen font-sans">
         <LocaleProvider>
+          <TopBanner />
           <Navbar />
           <main className="min-h-[calc(100vh-4rem)]">{children}</main>
+          <Footer />
         </LocaleProvider>
       </body>
     </html>

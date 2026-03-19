@@ -61,6 +61,21 @@ export const translations = {
       title: "Academics",
       comingSoon: "Curriculum and programs content coming soon.",
     },
+    footer: {
+      headingContact: "Contact",
+      headingQuickLinks: "Quick Links",
+      headingSchool: "School",
+      rights: "All rights reserved.",
+      addressLabel: "Address",
+      phoneLabel: "Phone",
+      emailLabel: "Email",
+      quickLinks: {
+        studentLogin: "Student login",
+        teacherLogin: "Teacher login",
+        aboutUs: "About us",
+        academics: "Academics",
+      },
+    },
   },
   hi: {
     nav: {
@@ -117,6 +132,21 @@ export const translations = {
     academics: {
       title: "शैक्षणिक",
       comingSoon: "पाठ्यक्रम और कार्यक्रमों की सामग्री जल्द जोड़ी जाएगी।",
+    },
+    footer: {
+      headingContact: "संपर्क",
+      headingQuickLinks: "त्वरित लिंक",
+      headingSchool: "विद्यालय",
+      rights: "सर्वाधिकार सुरक्षित।",
+      addressLabel: "पता",
+      phoneLabel: "फोन",
+      emailLabel: "ईमेल",
+      quickLinks: {
+        studentLogin: "छात्र लॉगिन",
+        teacherLogin: "शिक्षक लॉगिन",
+        aboutUs: "हमारे बारे में",
+        academics: "शैक्षणिक",
+      },
     },
   },
 } as const;
