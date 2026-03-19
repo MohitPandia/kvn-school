@@ -21,6 +21,7 @@ export const school = {
 
 /** Navbar links; label comes from translations via labelKey. */
 export const navItems = [
+  { labelKey: "admissionEnquiry" as const, href: "/admission-enquiry" },
   { labelKey: "studentLogin" as const, href: "/login/student" },
   { labelKey: "teacherLogin" as const, href: "/login/teacher" },
   { labelKey: "aboutUs" as const, href: "/about" },

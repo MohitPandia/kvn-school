@@ -22,9 +22,12 @@ Get the KVN Sec School website running on Vercel.
    - **Build Command:** `next build` (default).  
    - **Install Command:** `pnpm install` (Vercel will detect `pnpm-lock.yaml`).
 
-3. **Environment variables (Phase 1)**  
-   For the static/public site only, **no env vars are required**.  
-   When you add auth (Phase 3), add in **Settings → Environment Variables**:
+3. **Environment variables**  
+   Add in **Settings → Environment Variables**:
+   - `TELEGRAM_BOT_TOKEN` — Telegram bot token (for admission enquiry notifications)
+   - `TELEGRAM_CHAT_ID` — Telegram chat id where alerts should be sent
+
+   For auth later (Phase 3), also add:
    - `NEXTAUTH_SECRET` — long random string (e.g. `openssl rand -base64 32`)
    - `NEXTAUTH_URL` — your production URL (e.g. `https://kvn-school.vercel.app`)  
    If you add a database (e.g. Neon), add `DATABASE_URL` as well.
@@ -42,5 +45,6 @@ Get the KVN Sec School website running on Vercel.
 - [ ] Repo pushed to GitHub/GitLab/Bitbucket  
 - [ ] Vercel project created and repo connected  
 - [ ] Deploy triggered and build succeeded  
+- [ ] `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` added for notifications  
 - [ ] (Later) `NEXTAUTH_SECRET` and `NEXTAUTH_URL` set when auth is added  
 - [ ] (Optional) Custom domain configured  

@@ -39,6 +39,11 @@ export function Footer() {
           <h3 className="text-lg font-semibold text-foreground">{t.headingQuickLinks}</h3>
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
             <li>
+              <Link href="/admission-enquiry" className="hover:text-foreground transition-colors">
+                {t.quickLinks.admissionEnquiry}
+              </Link>
+            </li>
+            <li>
               <Link href="/login/student" className="hover:text-foreground transition-colors">
                 {t.quickLinks.studentLogin}
               </Link>
