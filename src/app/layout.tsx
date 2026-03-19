@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
+import { LocaleProvider } from "@/contexts/LocaleContext";
 import { Navbar } from "@/components/layout/Navbar";
 
 const nunito = Nunito({
@@ -25,10 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={nunito.variable}>
+    <html lang="en" className={nunito.variable} suppressHydrationWarning>
       <body className="antialiased min-h-screen font-sans">
-        <Navbar />
-        <main className="min-h-[calc(100vh-4rem)]">{children}</main>
+        <LocaleProvider>
+          <Navbar />
+          <main className="min-h-[calc(100vh-4rem)]">{children}</main>
+        </LocaleProvider>
       </body>
     </html>
   );

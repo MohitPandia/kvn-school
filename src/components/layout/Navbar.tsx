@@ -4,10 +4,19 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { schoolName, navItems } from "@/lib/constants";
+import { useLocale } from "@/contexts/LocaleContext";
+import { translations } from "@/lib/translations";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { locale, setLocale } = useLocale();
+  const t = translations[locale].nav;
+
+  const switchLanguage = () => {
+    setLocale(locale === "en" ? "hi" : "en");
+    setMobileOpen(false);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -28,10 +37,19 @@ export function Navbar() {
                 href={item.href}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
-                {item.label}
+                {t[item.labelKey]}
               </Link>
             </li>
           ))}
+          <li>
+            <button
+              type="button"
+              onClick={switchLanguage}
+              className="text-sm font-medium text-primary hover:text-primary/90 transition-colors"
+            >
+              {locale === "en" ? t.hindi : t.english}
+            </button>
+          </li>
         </ul>
 
         {/* Mobile menu button */}
@@ -74,10 +92,19 @@ export function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="block py-3 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
-                {item.label}
+                {t[item.labelKey]}
               </Link>
             </li>
           ))}
+          <li>
+            <button
+              type="button"
+              onClick={switchLanguage}
+              className="block w-full py-3 text-left text-sm font-medium text-primary hover:text-primary/90 transition-colors"
+            >
+              {locale === "en" ? t.hindi : t.english}
+            </button>
+          </li>
         </ul>
       </div>
     </header>
