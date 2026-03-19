@@ -13,6 +13,11 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "KVN Sec School | Krishna Vidhya Niketan",
   description: "KVN Sec School, Bikaner — Krishna Vidhya Niketan Sec School",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export const viewport: Viewport = {
